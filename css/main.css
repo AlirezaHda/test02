@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot');
+    src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.woff2') format('woff2'),
+        url('../fonts/icomoon.woff') format('woff'),
+        url('../fonts/icomoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'TCCC Unity bold';
+    src: url('../fonts/TCCCUnity-Bold.eot');
+    src: url('../fonts/TCCCUnity-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TCCCUnity-Bold.woff2') format('woff2'),
+        url('../fonts/TCCCUnity-Bold.woff') format('woff'),
+        url('../fonts/TCCCUnity-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'TCCC Unity regular';
+    src: url('../fonts/TCCCUnity-Regular.eot');
+    src: url('../fonts/TCCCUnity-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TCCCUnity-Regular.woff2') format('woff2'),
+        url('../fonts/TCCCUnity-Regular.woff') format('woff'),
+        url('../fonts/TCCCUnity-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.nav-link{
+    font-family: 'TCCC Unity bold';font-size: 14px;
+}
+.dropdown-item{
+    font-family: 'TCCC Unity regular';
+    font-size: 12px;
+}
+.btn{
+    font-family: 'TCCC Unity bold';
+    font-size: 12px;
+    height: 40px;
+}
+.btn-outline-dark:hover{
+    background-color: #f2f2f2;
+    color: #000;
+}
+.dropdown-toggle::after { border: 0;
+    content: "›";
+    font-size: 1.3rem;
+    line-height: 1;
+    vertical-align: -2px; }
+.dropdown:hover > .dropdown-toggle::after, .dropdown-toggle.show::after { transform: rotate(90deg); }
+.navbar-nav .nav-link { border-bottom: 2px solid transparent; }
+.navbar-nav .nav-item:hover > .nav-link {
+    border-bottom-color: #000; 
+}
+@media (min-width: 1200px) { 
+    .dropdown:hover > .dropdown-menu { 
+    display: block; margin-top: 0; } 
+}
+.dropdown-item:hover { background: none; color: #000; font-weight: 600; }
+.dropdown-item:hover::after { content: " ›"; }
+.navbar-toggler { margin-right: -35px; }

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'TCCC Unity';
+    src: url('TCCCUnity-Regular.eot');
+    src: url('TCCCUnity-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TCCCUnity-Regular.woff2') format('woff2'),
+        url('TCCCUnity-Regular.woff') format('woff'),
+        url('TCCCUnity-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
