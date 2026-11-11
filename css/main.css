@@ -1,66 +1,215 @@
 @font-face {
-    font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot');
-    src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.woff2') format('woff2'),
-        url('../fonts/icomoon.woff') format('woff'),
-        url('../fonts/icomoon.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "TCCC Unity bold";
+  src: url("../fonts/TCCCUnity-Bold.eot");
+  src:
+    url("../fonts/TCCCUnity-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TCCCUnity-Bold.woff2") format("woff2"),
+    url("../fonts/TCCCUnity-Bold.woff") format("woff"),
+    url("../fonts/TCCCUnity-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-    font-family: 'TCCC Unity bold';
-    src: url('../fonts/TCCCUnity-Bold.eot');
-    src: url('../fonts/TCCCUnity-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/TCCCUnity-Bold.woff2') format('woff2'),
-        url('../fonts/TCCCUnity-Bold.woff') format('woff'),
-        url('../fonts/TCCCUnity-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "TCCC Unity regular";
+  src: url("../fonts/TCCCUnity-Regular.eot");
+  src:
+    url("../fonts/TCCCUnity-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TCCCUnity-Regular.woff2") format("woff2"),
+    url("../fonts/TCCCUnity-Regular.woff") format("woff"),
+    url("../fonts/TCCCUnity-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-@font-face {
-    font-family: 'TCCC Unity regular';
-    src: url('../fonts/TCCCUnity-Regular.eot');
-    src: url('../fonts/TCCCUnity-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/TCCCUnity-Regular.woff2') format('woff2'),
-        url('../fonts/TCCCUnity-Regular.woff') format('woff'),
-        url('../fonts/TCCCUnity-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+.nav-link {
+  font-family: "TCCC Unity bold";
+  font-size: 14px;
 }
-.nav-link{
-    font-family: 'TCCC Unity bold';font-size: 14px;
+.dropdown-item {
+  font-family: "TCCC Unity regular";
+  font-size: 12px;
 }
-.dropdown-item{
-    font-family: 'TCCC Unity regular';
-    font-size: 12px;
+.btn {
+  font-family: "TCCC Unity bold";
+  font-size: 12px;
+  height: 40px;
 }
-.btn{
-    font-family: 'TCCC Unity bold';
-    font-size: 12px;
-    height: 40px;
+.btn-outline-dark:hover {
+  background-color: #f2f2f2;
+  color: #000;
 }
-.btn-outline-dark:hover{
-    background-color: #f2f2f2;
-    color: #000;
+.dropdown-toggle::after {
+  border: 0;
+  content: "›";
+  font-size: 1.3rem;
+  line-height: 1;
+  vertical-align: -2px;
 }
-.dropdown-toggle::after { border: 0;
-    content: "›";
-    font-size: 1.3rem;
-    line-height: 1;
-    vertical-align: -2px; }
-.dropdown:hover > .dropdown-toggle::after, .dropdown-toggle.show::after { transform: rotate(90deg); }
-.navbar-nav .nav-link { border-bottom: 2px solid transparent; }
+.dropdown:hover > .dropdown-toggle::after,
+.dropdown-toggle.show::after {
+  transform: rotate(90deg);
+}
+.navbar-nav .nav-link {
+  border-bottom: 2px solid transparent;
+}
 .navbar-nav .nav-item:hover > .nav-link {
-    border-bottom-color: #000; 
+  border-bottom-color: #000;
 }
-@media (min-width: 1200px) { 
-    .dropdown:hover > .dropdown-menu { 
-    display: block; margin-top: 0; } 
+@media all and (min-width: 1200px) {
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  .feature-text { margin-top: 0; }
+  .feature-img-end   { margin-left: -6rem;  width: calc(58 + 6rem); }
+  .feature-img-start { margin-right: -6rem; width: calc(58 + 6rem); }
+  .mySwiper .swiper-slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.35), transparent 60%);
+  }
+  .caption {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 30%;
+    left: 6.5%;
+    width: 48%;
+    justify-content: flex-end;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  }
+  .caption h2 {
+    font-size: 3.1cqw;
+  }
+  .caption p {
+    font-size: 1.4cqw;
+  }
+  .caption .btn {
+    width: 56%;
+    font-size: 1.4cqw;
+    text-shadow: none;
+  }
+  .view-all{
+    width: 327px;
+    padding: 0;
+  }
 }
-.dropdown-item:hover { background: none; color: #000; font-weight: 600; }
-.dropdown-item:hover::after { content: " ›"; }
-.navbar-toggler { margin-right: -35px; }
+.dropdown-item:hover {
+  background: none;
+  color: #000;
+  font-weight: 600;
+}
+.dropdown-item:hover::after {
+  content: " ›";
+}
+.navbar-toggler {
+  margin-right: -35px;
+}
+.btn.bg-black:hover {
+  outline: 3px solid #5a5f66;
+}
+.caption .btn:hover {
+  outline: 3px solid #b5b5b5;
+  background-color: #fff;
+}
+.caption .btn {
+  transition: outline-color 0.2s;
+}
+.swiper-pagination {
+  position: static;
+  margin-top: 1rem;
+  --swiper-pagination-color: #000;
+  --swiper-pagination-bullet-inactive-color: #888;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}
+.swiper-pagination-bullet {
+  transition: width 0.3s;
+}
+.swiper-pagination-bullet-active {
+  width: 40px;
+  border-radius: 8px;
+}
+.swiper-slide {
+  container-type: inline-size;
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 1rem;
+  --swiper-pagination-color: #000;
+  --swiper-pagination-bullet-inactive-color: #888;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}
+.swiper-pagination-bullet {
+  transition: width 0.3s;
+}
+.swiper-pagination-bullet-active {
+  width: 40px;
+  border-radius: 8px;
+}
+.h2 {
+  font-family: "TCCC Unity bold";
+}
+.p {
+  font-family: "TCCC Unity regular";
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+.carousel-indicators .active {
+  width: 40px;
+  border-radius: 10px;
+}
+.h5 {
+  font-family: "TCCC Unity bold";
+}
+.p5 {
+  font-family: "TCCC Unity regular";
+}
+.a5 {
+  font-family: "TCCC Unity bold";
+}
+.btn-dark:hover {
+  outline: 3px solid #6c7075;
+  --bs-btn-hover-bg: #212529;
+  --bs-btn-hover-border-color: #212529;
+}
+.feature-text { margin-top: -15px; }
+.btn-outline-dark:hover { outline: 3px solid #000; }
+@media all and (min-width:0px) and (max-width:1199px) {
+    .card{
+    height: 200px;
+}
+.feature-text { margin-top: -30px; }
+}
+.moreSwiper .swiper-slide {
+    width: 85%; 
+}
+.view-all { height: 44px; font-size: 14px; padding: 0 3rem; }
+@media (max-width: 1199.98px) {
+  .view-all { width: 100%; height: 48px; font-size: 16px; padding: 0; }
+}
+.brand-card { 
+    transition: transform .3s,
+    box-shadow .3s; 
+}
+.brand-card:hover { 
+    transform: scale(1.05); 
+    box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.2) !important; 
+}
+.footer-links a { font-family: "TCCC Unity bold"; font-size: 12px; color: #fff; text-decoration: none; }
+
+.social { width: 28px; height: 28px; border: 1.5px solid #fff; border-radius: 50%; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; text-decoration: none; }
+.social:hover {
+    outline: 2px solid #fff;
+}
+.footer-title{
+    font-family:"TCCC Unity regular" ;
+}
